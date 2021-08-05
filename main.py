@@ -6,10 +6,11 @@ fps = 120
 pg.init()
 game_screen = pg.display.set_mode(
     (800, 600),
-    pg.HWSURFACE | pg.DOUBLEBUF | pg.OPENGL,
+    # pg.HWSURFACE | pg.DOUBLEBUF | pg.OPENGL,
 )
 pg.display.set_caption("Tic Tac Toe")
 game_screen.fill(Color.LIGHT_GRAY)
+pg.display.flip()
 work = True
 while work:
     keys = pg.key.get_pressed()
